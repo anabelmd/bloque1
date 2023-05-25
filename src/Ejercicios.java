@@ -4,7 +4,13 @@ public class Ejercicios {
 	 * 1.1 Método que devuelva un número aleatorio entre dos pasados por argumentos
 	 * del método.
 	 */
-
+	
+	/**
+	 * 
+	 * @param numeroMax
+	 * @param numeroMin
+	 * @return un número aleatorio que se encuentra dentro del rango insertado por el usuario.
+	 */
 	public int numeroAleatorio(int numeroMax, int numeroMin) {
 		int resultado = 0;
 
@@ -19,6 +25,12 @@ public class Ejercicios {
 	 * tiene 18 o más.
 	 */
 	
+	
+	/**
+	 * 
+	 * @param p
+	 * Este método imprimirá un objeto persona.
+	 */
 	public void imprimirDatosPersona(Persona p) {
 		
 		System.out.println(p);
@@ -29,7 +41,11 @@ public class Ejercicios {
 	
 	
 	
-	
+	/**
+	 * 
+	 * @author Anabel
+	 *Clase Persona 
+	 */
 	class Persona{
 		private String nombre;
 		private int edad;
@@ -67,6 +83,9 @@ public class Ejercicios {
 			this.edad = edad;
 		}
 
+		/**
+		 * To String para que el objeto pueda imprimirse con el método imprimirDatosPersona
+		 */
 		@Override
 		public String toString() {
 			return "Persona [nombre=" + nombre + ", edad=" + edad + "]";
