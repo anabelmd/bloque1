@@ -21,7 +21,7 @@ public class Ejercicios {
 	
 	public void imprimirDatosPersona(Persona p) {
 		
-		
+		System.out.println(p);
 	}
 	
 	
