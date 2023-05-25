@@ -11,7 +11,7 @@ public class Ejercicios {
 	 * @param numeroMin
 	 * @return un número aleatorio que se encuentra dentro del rango insertado por el usuario.
 	 */
-	public int numeroAleatorio(int numeroMax, int numeroMin) {
+	public static int numeroAleatorio(int numeroMax, int numeroMin) {
 		int resultado = 0;
 
 		resultado = (int) (Math.random() * (numeroMax - numeroMin + 1) + numeroMin);
@@ -31,68 +31,10 @@ public class Ejercicios {
 	 * @param p
 	 * Este método imprimirá un objeto persona.
 	 */
-	public void imprimirDatosPersona(Persona p) {
+	public static void imprimirDatosPersona(Persona p) {
 		
 		System.out.println(p);
 	}
 	
-	
-	
-	
-	
-	
-	/**
-	 * 
-	 * @author Anabel
-	 *Clase Persona 
-	 */
-	class Persona{
-		private String nombre;
-		private int edad;
-		
-		public Persona(String nombre, int edad) {
-			this.nombre = nombre;
-			this.edad = edad;
-		}
 
-		/**
-		 * @return the nombre
-		 */
-		public String getNombre() {
-			return nombre;
-		}
-
-		/**
-		 * @param nombre the nombre to set
-		 */
-		public void setNombre(String nombre) {
-			this.nombre = nombre;
-		}
-
-		/**
-		 * @return the edad
-		 */
-		public int getEdad() {
-			return edad;
-		}
-
-		/**
-		 * @param edad the edad to set
-		 */
-		public void setEdad(int edad) {
-			this.edad = edad;
-		}
-
-		/**
-		 * To String para que el objeto pueda imprimirse con el método imprimirDatosPersona
-		 */
-		@Override
-		public String toString() {
-			return "Persona [nombre=" + nombre + ", edad=" + edad + "]";
-		}
-		
-		
-		
-		
-	}
 }
